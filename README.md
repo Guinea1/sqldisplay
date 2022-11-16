@@ -1,6 +1,6 @@
 # sqldisplay
 
-## A simple package to make displaying MySQL queries much easier
+## An extremely simple package to make displaying SQL queries much easier
 
 ### How do I use it?
 Pretty simple, just install with pip(3):
