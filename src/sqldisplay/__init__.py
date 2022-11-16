@@ -1,1 +1,1 @@
-import src.sqldisplay
+import sqldisplay.sqldisplay
