@@ -2,6 +2,9 @@
 
 ## An extremely simple package to make displaying SQL queries much easier
 
+### How does it work?
+It simply takes cursor.description, as well as the query result and turns it into a readable format
+
 ### How do I use it?
 Pretty simple, just install with pip(3):
 `pip3 install sqldisplay`
@@ -15,12 +18,12 @@ db = mysql.connector.connect(
     host="mysql-container",
     user="root",
     passwd="root",
-    database="project2"
+    database="testdb"
 )
 
 cursor = db.cursor()
 
-query = "SELECT * FROM EmployeesPerRegion WHERE region_name = 'Americas';"
+query = "SELECT * FROM Customers WHERE Country = 'USA';"
 cursor.execute(query)
 result = cursor.fetchall()
 sqldisplay.format(cursor.description, result)
