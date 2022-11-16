@@ -12,7 +12,7 @@ Pretty simple, just install with pip(3):
 And then use it! (example)
 ```
 import mysql.connector
-import sqldisplay
+from sqldisplay import sqldisplay
 
 db = mysql.connector.connect(
     host="mysql-container",
